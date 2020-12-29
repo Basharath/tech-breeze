@@ -23,7 +23,7 @@
 
 .nav-brand {
   font-size: 1.8rem;
-  color: #11698e;
+  color: var(--primary);
 }
 
 .nav-brand:hover {
@@ -52,23 +52,23 @@
 }
 
 .nav-link {
-  color: #272626;
+  color: var(--dark);
   font-size: 16px;
 }
 
 .nav-link:hover {
-  color: #11698e;
+  color: var(--primary);
 }
 
 .navbar-social .icon {
   padding-left: 20px;
-  color: #19456b;
+  color: #124e7f;
   cursor: pointer;
   font-size: 20px;
 }
 
 .navbar-social .icon:hover {
-  color: #11698e;
+  color: var(--primary);
 }
 
 @media (max-width: 1100px) {
@@ -101,6 +101,17 @@
     font-size: 25px;
     cursor: pointer;
     transition: all 1s ease-in;
+  }
+
+  .fas.fa-times {
+    font-size: 28px;
+    transform: rotate(180deg);
+    transition: transform 1s ease-in-out;
+  }
+
+  .fas.fa-bars {
+    transform: rotate(-180deg);
+    transition: transform 1s ease-in-out;
   }
 
   .nav-collapse {

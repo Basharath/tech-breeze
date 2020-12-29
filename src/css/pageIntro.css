@@ -4,7 +4,7 @@
   overflow: none;
   display: flex;
   align-items: center;
-  background-color: #f7f7f7;
+  background-color: var(--white);
   /* border-radius: 25px; */
 }
 
@@ -20,7 +20,7 @@
 .intro-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #555;
+  color: var(--dark);
   padding-bottom: 10px;
 }
 
@@ -38,7 +38,7 @@
 .btn {
   padding: 10px 25px;
   border: none;
-  background-color: mediumaquamarine;
+  background-color: var(--primary);
   border-radius: 5px;
   color: #fbfbfb;
   font-size: 1rem;
@@ -48,8 +48,7 @@
 }
 
 .text.btn:hover {
-  background-color: hsl(160, 51%, 50%);
-  box-shadow: 1px 1px 10px 2px mediumaquamarine;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
 }
 
 .video.btn {
@@ -58,11 +57,11 @@
   color: #777;
 }
 
-.video-btn:hover .icon {
+.video.btn:hover .icon {
   color: hsl(160, 51%, 50%);
 }
 
-.video-btn .icon {
+.video.btn .icon {
   color: #888;
   font-size: 25px;
   vertical-align: middle;

@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className="navbar">
           <div className="brand-container">
             <a href="/" className="nav-brand">
-              Brand Name
+              Tech Breeze
             </a>
             <div className="nav-toggler" onClick={handleNavToggle}>
               <i className={"fas " + (toggle ? "fa-times" : "fa-bars")}></i>

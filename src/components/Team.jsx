@@ -1,7 +1,7 @@
 import React from "react";
 import TeamCard from "./common/TeamCard";
 
-import "../css/team.scss";
+import "../css/team.css";
 
 export default function App() {
   return (

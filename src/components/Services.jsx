@@ -1,7 +1,7 @@
 import React from "react";
 import ServiceCard from "./common/ServiceCard";
 
-import "../css/services.scss";
+import "../css/services.css";
 
 export default function InfoCards() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../css/contact.scss";
+import "../css/contact.css";
 
 export default function App() {
   return (

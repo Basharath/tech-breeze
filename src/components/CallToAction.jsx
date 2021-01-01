@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../css/callToAction.scss";
+import "../css/callToAction.css";
 
 export default function App() {
   return (

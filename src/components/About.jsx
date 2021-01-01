@@ -14,18 +14,19 @@ export default function App() {
           minus exercitationem velit maxime, excepturi quidem?
         </p>
         <ul className="list">
-          <li>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
-            aliquam.
-          </li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
           <li>
             Laborum quos quidem sequi quas fugit itaque vel quibusdam inventore?
           </li>
           <li>
-            Expedita temporibus suscipit perferendis accusantium ducimus quasi
-            mollitia atque sequi.
+            Expedita temporibus suscipit perferendis mollitia atque sequi.
           </li>
         </ul>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque dolore
+          saepe porro. Obcaecati, officia accusantium. Lorem ipsum dolor sit
+          amet.
+        </p>
       </div>
     </div>
   );

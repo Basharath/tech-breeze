@@ -11,6 +11,8 @@ import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
 import CallToAction from "./components/CallToAction";
 import Team from "./components/Team";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -25,6 +27,8 @@ export default function App() {
       <Testimonials />
       <CallToAction />
       <Team />
+      <Contact />
+      <Footer />
     </>
   );
 }

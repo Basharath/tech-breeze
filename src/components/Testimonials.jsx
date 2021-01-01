@@ -49,7 +49,7 @@ const responsive = {
 
 export default function App() {
   return (
-    <>
+    <div id="testimonials">
       <div className="testimonials-title">Testimonials</div>
       <p className="testimonials-description">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -60,12 +60,12 @@ export default function App() {
           mouseTracking
           items={items}
           responsive={responsive}
-          // autoPlay
-          // infinite
-          // autoPlayInterval={1000}
-          // animationDuration={1000}
+          autoPlay
+          infinite
+          autoPlayInterval={1000}
+          animationDuration={1000}
         />
       </div>
-    </>
+    </div>
   );
 }

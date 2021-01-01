@@ -5,7 +5,7 @@ import "../css/team.scss";
 
 export default function App() {
   return (
-    <div className="team-container">
+    <div className="team-container" id="team">
       <div className="team-header">
         <p className="team-title">Team</p>
         <p className="team-description">

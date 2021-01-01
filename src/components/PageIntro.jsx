@@ -16,11 +16,11 @@ export default function PageIntro() {
 
   return (
     <>
-      <div className="page-intro-container">
+      <div className="page-intro-container" id="home">
         <div className="text-container">
           <h1 className="intro-title">Elegant and creative solutions</h1>
           <p className="intro-text">
-            We are team of talanted designers & developers making websites and
+            We are a team of talanted designers & developers making websites and
             apps
           </p>
           <div className="btn-row">

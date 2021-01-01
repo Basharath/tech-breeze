@@ -5,7 +5,7 @@ import "../css/services.scss";
 
 export default function InfoCards() {
   return (
-    <div className="services-container">
+    <div className="services-container" id="services">
       <div className="title">Services</div>
       <div className="description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,

@@ -55,9 +55,14 @@
 .nav-link {
   color: var(--dark);
   font-size: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: var(--primary);
 }
 
@@ -68,8 +73,48 @@
   font-size: 20px;
 }
 
+.navbar-social .icon a {
+  color: #124e7f;
+}
+
+.navbar-social .icon a:hover {
+  color: var(--primary);
+}
+
 .navbar-social .icon:hover {
   color: var(--primary);
+}
+
+.pageScroll {
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  color: var(--white);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+  background-color: var(--primary);
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease;
+}
+
+.pageScroll.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pageScroll i {
+  vertical-align: middle;
+  line-height: 45px;
+  font-size: 1.3rem;
+}
+
+.pageScroll:hover {
+  background-color: hsl(152, 77%, 35%);
 }
 
 @media (max-width: 1100px) {
@@ -120,10 +165,10 @@
     align-items: flex-start;
     position: absolute;
     top: 100%;
-    background-color: #f7f7f7;
+    background-color: var(--white);
     width: 100%;
     left: 0;
-    padding: 0 0 20px 26px;
+    padding: 5px 0 20px 26px;
     visibility: hidden;
     min-height: 0;
     max-height: 0;
@@ -133,7 +178,7 @@
 
   .nav-collapse.show {
     visibility: visible;
-    min-height: 170px;
+    min-height: 175px;
     opacity: 1;
     z-index: 10;
   }
@@ -144,17 +189,23 @@
   }
 
   .nav-item {
-    padding: 0;
+    padding: 0px;
+    padding-bottom: 3px;
   }
 
   .navbar-social {
     display: flex;
     justify-content: space-between;
     width: 120px;
-    padding-top: 5px;
+    padding: 10px 0;
   }
   .navbar-social .icon {
     padding: 0;
     font-size: 20px;
+  }
+
+  .pageScroll {
+    bottom: 25px;
+    right: 25px;
   }
 }

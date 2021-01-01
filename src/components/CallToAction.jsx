@@ -4,7 +4,7 @@ import "../css/callToAction.scss";
 
 export default function App() {
   return (
-    <div className="cta-container">
+    <div className="cta-container" id="cta">
       <div className="cta-title">Call to action</div>
       <div className="cta-body">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis

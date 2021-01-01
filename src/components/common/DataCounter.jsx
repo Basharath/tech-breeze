@@ -12,9 +12,9 @@ export default function App({ end, title }) {
 
   useEffect(() => {
     scroll();
-  }, []);
+  });
 
-  const scroll = async () => {
+  async function scroll() {
     const data = await document.getElementById("data");
     const position = await data.getBoundingClientRect().bottom;
 
@@ -26,7 +26,7 @@ export default function App({ end, title }) {
         }
       }
     });
-  };
+  }
 
   return (
     <div className="counter">

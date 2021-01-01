@@ -8,14 +8,14 @@ export default function Navbar() {
 
   useEffect(() => {
     scroll();
-  }, []);
+  });
 
   const handleNavToggle = () => {
     const state = toggle;
     setToggle(!state);
   };
 
-  const scroll = () => {
+  function scroll() {
     document.addEventListener("scroll", () => {
       const navArray = [
         "home",
@@ -38,7 +38,7 @@ export default function Navbar() {
           setActive(element);
       });
     });
-  };
+  }
 
   const getPos = async (id) => {
     const element = await document.getElementById(id);
@@ -151,7 +151,7 @@ export default function Navbar() {
                 <span className="icon">
                   <a
                     href="https://twitter.com/hashBender"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     <i className="fab fa-twitter"></i>

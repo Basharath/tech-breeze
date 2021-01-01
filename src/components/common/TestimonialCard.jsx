@@ -12,7 +12,7 @@ export default function TestimonialCard({
       <div className="testimonial-body">
         <i className="fas fa-quote-left quote"></i>
         {testimony}
-        <if className="fas fa-quote-right quote"></if>
+        <i className="fas fa-quote-right quote"></i>
       </div>
       <div className="testimonial-image">
         <img src={image} alt="testimonial" />

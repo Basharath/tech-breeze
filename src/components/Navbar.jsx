@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import "../css/navbar.css";
 
 export default function Navbar() {
@@ -6,16 +6,12 @@ export default function Navbar() {
   const [active, setActive] = useState("home");
   const [scrollUp, setScrollUp] = useState(false);
 
-  useEffect(() => {
-    scroll();
-  });
-
   const handleNavToggle = () => {
     const state = toggle;
     setToggle(!state);
   };
 
-  function scroll() {
+  const scroll = useCallback(() => {
     document.addEventListener("scroll", () => {
       const navArray = [
         "home",
@@ -38,7 +34,11 @@ export default function Navbar() {
           setActive(element);
       });
     });
-  }
+  }, []);
+
+  useEffect(() => {
+    scroll();
+  }, [scroll]);
 
   const getPos = async (id) => {
     const element = await document.getElementById(id);

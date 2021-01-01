@@ -37,10 +37,10 @@ export default function App() {
           <div className="map">
             <iframe
               title="iframe"
-              frameborder="0"
+              frameBorder="0"
+              // marginWidth="0"
+              // marginHeight="0"
               scrolling="yes"
-              marginheight="0"
-              marginwidth="0"
               src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=glasgow&amp;aq=&amp;sll=55.988706,-4.578927&amp;sspn=0.038696,0.132093&amp;ie=UTF8&amp;hq=&amp;hnear=Glasgow,+Glasgow+City,+United+Kingdom&amp;t=m&amp;ll=55.864331,-4.251709&amp;spn=0.048164,0.135612&amp;z=12&amp;iwloc=A&amp;output=embed"
             ></iframe>
           </div>

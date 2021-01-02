@@ -53,7 +53,7 @@ export default function Navbar() {
     setActive(id);
 
     window.scrollBy({
-      top: elementPosition - 55,
+      top: elementPosition - 60,
       behavior: "smooth"
     });
   };

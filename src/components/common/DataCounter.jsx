@@ -26,17 +26,31 @@ export default function DataCounter({ count, title }) {
     counter();
   }, [count]);
 
-  document.addEventListener("scroll", async () => {
+  const handleScrollEvent = async () => {
     const element = await document.getElementById("data");
     const elementPosition = await element.getBoundingClientRect().top;
 
     if (window.pageYOffset > elementPosition) setTrigger(true);
-  });
+  };
+
+  // const registerEvent = () => {
+  //   document.addEventListener("scroll", handleScrollEvent);
+  // };
+
+  // const unregisterEvent = () => {
+  //   document.removeEventListener("scroll", handleScrollEvent);
+  // };
 
   useEffect(() => {
     if (trigger) {
       increment();
     }
+
+    document.addEventListener("scroll", handleScrollEvent);
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent);
+    };
   }, [trigger, increment]);
 
   return (

@@ -19,7 +19,7 @@
 
 .card-icon {
   font-size: 1.8rem;
-  color: mediumaquamarine;
+  color: var(--primary);
 }
 
 .card-title {
@@ -38,7 +38,7 @@
 }
 
 .card:hover .card-title {
-  color: mediumaquamarine;
+  color: var(--primary);
 }
 
 @media (max-width: 1100px) {

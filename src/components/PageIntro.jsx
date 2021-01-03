@@ -35,14 +35,14 @@ export default function PageIntro() {
         <div
           className={"video-background" + (toggle ? " show" : "")}
           onClick={handleVideo}
-          style={toggle ? { top: window.pageXOffset + 63 } : {}}
+          style={toggle ? { top: window.pageYOffset } : {}}
         >
           <div className="video-container">
             <video
               className="intro-video"
               autoPlay
               controls
-              src="https://vod-progressive.akamaized.net/exp=1609530817~acl=%2A%2F890230824.mp4%2A~hmac=6d692cf54de04f7c9f553aa31da0414fd27e656737f2f1170239cb13b8b29932/vimeo-prod-skyfire-std-us/01/4292/9/246463976/890230824.mp4?download=1&filename=Atoms+-+13232.mp4"
+              src="https://uploads.codesandbox.io/uploads/user/75b7fb6e-4dc1-44ef-966c-d5e65709d866/20yJ-Atoms+-+13232.mp4"
             ></video>
           </div>
         </div>

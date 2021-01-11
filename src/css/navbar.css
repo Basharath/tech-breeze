@@ -180,7 +180,7 @@
 
   .nav-collapse.show {
     visibility: visible;
-    min-height: 210px !important;
+    min-height: 235px !important;
     opacity: 1;
     z-index: 10;
   }

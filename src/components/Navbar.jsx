@@ -11,6 +11,11 @@ export default function Navbar() {
     setToggle(!state);
   };
 
+  const handleNavItemClick = (item) => {
+    handleNavToggle();
+    handleScroll(item);
+  };
+
   const scroll = useCallback(() => {
     document.addEventListener("scroll", () => {
       const navArray = [
@@ -83,12 +88,15 @@ export default function Navbar() {
                     className={
                       "nav-link" + (active === "home" ? " active" : "")
                     }
-                    onClick={() => handleScroll("home")}
+                    onClick={() => handleNavItemClick("home")}
                   >
                     Home
                   </button>
                 </li>
-                <li className="nav-item" onClick={() => handleScroll("about")}>
+                <li
+                  className="nav-item"
+                  onClick={() => handleNavItemClick("about")}
+                >
                   <button
                     className={
                       "nav-link" + (active === "about" ? " active" : "")
@@ -99,7 +107,7 @@ export default function Navbar() {
                 </li>
                 <li
                   className="nav-item"
-                  onClick={() => handleScroll("services")}
+                  onClick={() => handleNavItemClick("services")}
                 >
                   <button
                     className={
@@ -112,7 +120,7 @@ export default function Navbar() {
 
                 <li
                   className="nav-item"
-                  onClick={() => handleScroll("portfolio")}
+                  onClick={() => handleNavItemClick("portfolio")}
                 >
                   <button
                     className={
@@ -122,7 +130,10 @@ export default function Navbar() {
                     Portfolio
                   </button>
                 </li>
-                <li className="nav-item" onClick={() => handleScroll("team")}>
+                <li
+                  className="nav-item"
+                  onClick={() => handleNavItemClick("team")}
+                >
                   <button
                     className={
                       "nav-link" + (active === "team" ? " active" : "")
@@ -133,7 +144,7 @@ export default function Navbar() {
                 </li>
                 <li
                   className="nav-item"
-                  onClick={() => handleScroll("contact")}
+                  onClick={() => handleNavItemClick("contact")}
                 >
                   <button
                     className={
